@@ -153,6 +153,19 @@ voivent-mv-studio/
 
 ---
 
+## Acknowledgements
+
+Voivent MV Studio is made possible by these incredible open-source projects:
+
+- [Three.js](https://threejs.org/) — Procedural 3D scene graphs and WebGPU/WebGL rendering
+- [Phaser](https://phaser.io/) — 2D canvas visuals and particle pipelines
+- [ONNX Runtime Web](https://onnxruntime.ai/) — On-device AI inference with WebGPU acceleration
+- [Demucs](https://github.com/facebookresearch/demucs) — State-of-the-art music source separation architecture
+- [MediaBunny](https://github.com/Vanilagy/mediabunny) — Fast in-browser MP4 container muxing and WebCodecs export
+- [React](https://react.dev/) & [Vite](https://vitejs.dev/) — Reactive frontend architecture and fast bundling
+
+---
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
