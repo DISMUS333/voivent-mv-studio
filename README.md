@@ -135,8 +135,8 @@ npm test
 
 ```text
 voivent-mv-studio/
-├── public/                 # Static assets, demo audio, and audio models
 ├── src/
+│   ├── assets/             # Static UI assets and feature showcase imagery
 │   ├── components/
 │   │   ├── mv/             # 3D Canvas, WebMCP tools, Timeline, Effects
 │   │   │   ├── webMcpTools.ts      # 38 WebMCP tool declarations & schemas
