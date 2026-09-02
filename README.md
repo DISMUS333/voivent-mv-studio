@@ -16,7 +16,7 @@ Voivent MV Studio is an open-source, client-side creative application built for 
 By exposing 38 browser-native tools through the Web Model Context Protocol (WebMCP), autonomous AI agents (such as ChatGPT, Claude, Gemini, or local models) can directly interface with:
 
 - **Procedural 3D World Engine**: Real-time voxel terrain generation, orbital rings, procedural lighting, fog, and dynamic cameras using Three.js, WebGPU, and WebGL.
-- **Multitrack Timeline**: Multi-scene segmentation, non-destructive clip editing, keyframe interpolation, and time-of-day progression.
+- **Multitrack Timeline**: Arbitrary multi-scene splitting (intro, verses, chorus, drops, narrative chapters), non-destructive clip editing, keyframe interpolation, and dynamic scene transitions.
 - **Lyric Intelligence & Alignment**: Automatic lyric placement, multi-language translation, phoneme analysis, and safe-zone enforcement.
 - **Audio-Reactive Signals & AI Stems**: Web Audio API beat detection, on-device AI stem separation accelerated by WebGPU (ONNX Runtime Web), and dynamic energy pulsing.
 - **Visual Feedback Loop (`get_mv_preview`)**: The agent captures real-time canvas snapshots, visually inspects composition and lighting, and self-refines without human intervention.

@@ -242,11 +242,20 @@ export default {
 
         // ── 🎙 Workers AI 音声文字起こし (/api/transcribe) ─────────────────
         if (url.pathname === '/api/transcribe') {
+            // 🛡️ 不正利用防止: 許可されたオリジンからのアクセスのみ許可
+            const origin = request.headers.get('origin') || '';
+            const isAllowedOrigin =
+                !origin ||
+                origin === 'https://studio.voivent.com' ||
+                origin.endsWith('.workers.dev') ||
+                origin.includes('localhost') ||
+                origin.includes('127.0.0.1');
+
             if (request.method === 'OPTIONS') {
                 return new Response(null, {
                     status: 204,
                     headers: {
-                        'access-control-allow-origin': '*',
+                        'access-control-allow-origin': isAllowedOrigin ? (origin || '*') : 'https://studio.voivent.com',
                         'access-control-allow-methods': 'POST, OPTIONS',
                         'access-control-allow-headers': 'content-type',
                         'access-control-max-age': '86400',
@@ -254,10 +263,17 @@ export default {
                 });
             }
 
+            if (!isAllowedOrigin) {
+                return new Response(JSON.stringify({ error: 'forbidden: unauthorized origin' }), {
+                    status: 403,
+                    headers: { 'content-type': 'application/json' },
+                });
+            }
+
             if (request.method !== 'POST') {
                 return new Response(JSON.stringify({ error: 'method not allowed' }), {
                     status: 405,
-                    headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' },
+                    headers: { 'content-type': 'application/json', 'access-control-allow-origin': origin || '*' },
                 });
             }
 
