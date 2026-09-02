@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/png" href="/app-icon.png" />
+    <link rel="apple-touch-icon" href="/app-icon.png" />
+    <title>Voivent MV Studio</title>
+    <style>
+      html, body, #root { height: 100%; margin: 0; padding: 0; background: #0d1017; }
+      * { box-sizing: border-box; }
+
+      /* ステム分離パネル等の進捗不定インジケータ */
+      @keyframes stemIndeterminate {
+        from { margin-left: 0; }
+        to { margin-left: 65%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/web/main-web.tsx"></script>
+  </body>
+</html>

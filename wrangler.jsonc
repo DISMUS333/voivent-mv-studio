@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "voivent-mv-studio",
+  "compatibility_date": "2026-08-01",
+  // /models/* と /ort/* は静的アセットではなく Worker (R2 配信) が処理する。
+  // 172MB 級モデル・26.5MiB の ort WASM は静的アセットの 1 ファイル
+  // 25MiB 上限に収まらないため
+  "main": "./worker/index.ts",
+  "r2_buckets": [
+    {
+      "binding": "STEM_MODELS",
+      "bucket_name": "voivent-stem-models"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "assets": {
+    "directory": "./dist-web/",
+    "not_found_handling": "single-page-application",
+    // /models/* (ステム分離モデル), /ort/* (WASM), /api/* (Workers AI 文字起こし)
+    "run_worker_first": ["/models/*", "/ort/*", "/api/*"]
+  }
+}

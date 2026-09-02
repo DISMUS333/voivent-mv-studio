@@ -1,0 +1,30 @@
+{
+  "name": "voivent-mv-studio",
+  "version": "1.0.0",
+  "description": "Agent-native 3D music video studio powered by WebMCP (Web Model Context Protocol) and client-side Web Audio / WebGL",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@types/three": "^0.185.4",
+    "mediabunny": "^1.55.3",
+    "onnxruntime-web": "^1.29.0",
+    "phaser": "^4.2.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^6.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1",
+    "wrangler": "^4.127.0"
+  }
+}
