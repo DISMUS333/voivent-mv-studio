@@ -26,7 +26,7 @@ By exposing 38 browser-native tools through the Web Model Context Protocol (WebM
 - **Audio-Reactive Signals & AI Stems**: Web Audio API beat detection, on-device AI stem separation accelerated by WebGPU (ONNX Runtime Web), and dynamic energy pulsing.
 - **Visual Feedback Loop (`get_mv_preview`)**: The agent captures real-time canvas snapshots, visually inspects composition and lighting, and self-refines without human intervention.
 
-Everything executes 100% client-side in the browser with zero backend infrastructure.
+Core editing, 3D generation, and WebMCP orchestration execute client-side in the browser, backed by lightweight edge-serverless infrastructure.
 
 ---
 
