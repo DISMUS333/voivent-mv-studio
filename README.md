@@ -5,7 +5,12 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-studio.voivent.com-0284c7)](https://studio.voivent.com)
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Demo_Video-ff0000.svg)](https://youtu.be/iR75E2XbD5g)
 [![WebMCP](https://img.shields.io/badge/WebMCP-38_Tools-10b981.svg)](https://openai.com/ja-JP/webmcp-challenge/)
+
+<p align="center">
+  <img src="docs/images/studio_workspace.png" alt="Voivent MV Studio Workspace" width="100%" />
+</p>
 
 ---
 
@@ -28,7 +33,7 @@ Everything executes 100% client-side in the browser with zero backend infrastruc
 ## Live Demo
 
 - **Web Application**: [https://studio.voivent.com](https://studio.voivent.com)
-- **Demo Video**: 2-minute 35-second walkthrough demonstrating autonomous 3D world creation, lyric synchronization, and cinematic time-of-day multi-scene direction.
+- **Demo Video**: [https://youtu.be/iR75E2XbD5g](https://youtu.be/iR75E2XbD5g) (2-minute 35-second walkthrough demonstrating autonomous 3D world creation, lyric synchronization, and cinematic time-of-day multi-scene direction)
 
 ---
 
